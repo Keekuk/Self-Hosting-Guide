@@ -7,7 +7,7 @@
  <a href="https://github.com/mikeroyal?tab=followers">
          <img alt="followers" title="Follow me on Github for Updates" src="https://custom-icon-badges.demolab.com/github/followers/mikeroyal?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a> 	
 
-![Maintenance](https://img.shields.io/maintenance/yes/2023?style=for-the-badge)
+![Maintenance](https://img.shields.io/maintenance/yes/2024?style=for-the-badge)
 ![Last-Commit](https://img.shields.io/github/last-commit/mikeroyal/self-hosting-guide?style=for-the-badge)
 
  #### A guide for getting started with Self Hosting devices including software and hardware that will make you a better and more efficient Self Hosting.
@@ -46,6 +46,7 @@
        * [Remote Access](https://github.com/mikeroyal/Self-Hosting-Guide#Remote-Access)
        * [Virtualization](https://github.com/mikeroyal/Self-Hosting-Guide#Virtualization)
        * [Password Management](https://github.com/mikeroyal/Self-Hosting-Guide#password-management)
+       * [SSH](#ssh)
        * [VPN](#vpn)
        * [LDAP(Lightweight Directory Access Protocol)](#ldap)
        * [Log Management](#log-management)
@@ -62,6 +63,8 @@
        * [RSS](#RSS)
        * [Websites/Blogs](#WebsitesBlogs)
        * [Social](#Social)
+       * [Nostr](#nostr)
+       * [iMessage](#imessage)
        * [Communications](https://github.com/mikeroyal/Self-Hosting-Guide#communications)
        * [Business Management](https://github.com/mikeroyal/Self-Hosting-Guide#business-management)
        * [Collaboration & Synchronization](https://github.com/mikeroyal/Self-Hosting-Guide#Collaboration--Synchronization)
@@ -233,6 +236,8 @@ Most self-hosted software can be installed using [Docker](https://en.wikipedia.o
 
 [Containerd](https://containerd.io/) is a daemon that manages the complete container lifecycle of its host system, from image transfer and storage to container execution and supervision to low-level storage to network attachments and beyond. It is available for Linux and Windows.
 
+[ContainersSSH](https://containerssh.io/) is an SSH Server that Launches Containers in Kubernetes and Docker on demand.
+
 [Podman](https://podman.io/) is a daemonless, open source, Linux native tool designed to make it easy to find, run, build, share and deploy applications using Open Containers Initiative (OCI) Containers and Container Images. Podman provides a command line interface (CLI) familiar to anyone who has used the Docker Container Engine.
 
 [Lima](https://github.com/lima-vm/lima) is a tool that launches Linux virtual machines with automatic file sharing and port forwarding (similar to WSL2), and [containerd](https://containerd.io/). It's a great free and open-source alternative for [Docker Desktop](https://www.docker.com/products/docker-desktop).
@@ -316,6 +321,8 @@ Most self-hosted software can be installed using [Docker](https://en.wikipedia.o
 [APITable](https://apitable.com/) is an API-oriented low-code platform for building collaborative apps and better than all other Airtable open-source alternatives. 
 
 [Chisel Kubernetes Operator](https://github.com/FyraLabs/chisel-operator/) is a Kubernetes operator for Chisel. It allows you to use Chisel as a LoadBalancer provider for your Kubernetes cluster, similar to [inlets-operator](https://github.com/inlets/inlets-operator).
+
+[Docker-pgautoupgrade](https://github.com/pgautoupgrade/docker-pgautoupgrade) is a PostgreSQL Docker container that automatically upgrades your database. It's whole purpose in life is to automatically detect the version of PostgreSQL used in the existing PostgreSQL data directory, and automatically upgrade it (if needed) to the required version of PostgreSQL.
 
 [IT-Tools](https://it-tools.tech/) is a collection of handy online tools for developers, with great UX. 
 
@@ -429,6 +436,8 @@ Most self-hosted software can be installed using [Docker](https://en.wikipedia.o
 
 [Apache](https://httpd.apache.org/) - Most popular web server.
 
+[Beakon](https://github.com/RealDudePerson/beakon) - A self-host location sharing webserver. Beakon aims to leak as little data as possible and uses mostly self-contained libraries and local database files. Where possible, it will reference local files and not reach out over any network. 
+
 [Caddy](https://caddyserver.com/) - The HTTP/2 Web Server with Fully Managed TLS.
 
 [Cherokee](https://cherokee-project.com/) - Lightweight, high-performance web server/reverse proxy.
@@ -486,6 +495,8 @@ Most self-hosted software can be installed using [Docker](https://en.wikipedia.o
 [LoLLMS WebUI](https://github.com/ParisNeo/lollms-webui) is a the hub for LLM (Large Language Model) models. It aims to provide a user-friendly interface to access and utilize various LLM models for a wide range of tasks. Whether you need help with writing, coding, organizing data, generating images, or seeking answers to your questions.
 
 [LM Studio](https://lmstudio.ai/) is a tool to Discover, download, and run local LLMs.
+
+[Ava PLS](https://lmstudio.ai/) small, all-in-one desktop app to run LLMs locally.
 
 [Gradio Web UI](https://github.com/oobabooga/text-generation-webui) is a tool for Large Language Models. Supports transformers, GPTQ, llama.cpp (ggml/gguf), Llama models. 
 
@@ -1292,9 +1303,44 @@ Minio's test-server called "play" is already configured in the default client, y
 
 [pass](https://www.passwordstore.org/) is an open-source unix-based password utilitiy with various [gui clients](https://www.passwordstore.org/#other)
 
+### SSH
+
+[Back to The Top](#table-of-contents)
+
+ * **Secure Shell Protocol (SSH)** is a cryptographic network protocol for operating network services securely over an unsecured network.
+
+[Advanced SSH config](https://pypi.python.org/pypi/advanced-ssh-config/) is a tool that enhances ssh_config file capabilities, completely transparent.
+
+[AutoSSH](https://www.harding.motd.ca/autossh/) is a tool that automatically respawn ssh session after network interruption.
+
+[ContainersSSH](https://containerssh.io/) is an SSH Server that Launches Containers in Kubernetes and Docker on demand.
+
+[Cluster SSH](https://sourceforge.net/projects/clusterssh/) is a tool that controls a number of xterm windows via a single graphical console.
+
+[DSH](https://www.netfort.gr.jp/~dancer/software/dsh.html.en)  is a Dancer's shell / distributed shell - Wrapper for executing multiple remote shell commands from one command line.
+
+[Flightplan](https://github.com/pstadler/flightplan) is a node.js library for streamlining application deployment or systems administration tasks (local and remote hosts).
+
+[Mosh](https://mosh.org/) is a command-line program, like SSH. You can use it inside xterm, gnome-terminal, urxvt, Terminal.app, iTerm, emacs, screen, or tmux.
+
+[Parallel SSH](https://parallel-ssh.org/) is an asynchronous parallel SSH library designed for large scale automation. It differentiates ifself from alternatives, other libraries and higher level frameworks like Ansible or Chef.
+
+[SSH Audit](https://github.com/jtesta/ssh-audit) is a tool for SSH server & client configuration auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc).
+
+[Sshwifty](https://sshwifty-demo.nirui.org/) is a SSH and Telnet connector made for the Web. It can be deployed on your computer or server to provide SSH and Telnet access interface for any compatible (standard) web browser.
+
+[SSHrc](https://github.com/Russell91/sshrc) is a tool that sources ~/.sshrc on your local computer after logging in remotely.
+
+[StormSSH](https://stormssh.readthedocs.org) is a command line tool to manage SSH connections.
+
+[Tailscale SSH](https://tailscale.com/kb/1193/tailscale-ssh/) is a service that allows Tailscale to manage the authentication and authorization of SSH connections on your tailnet.
+
+
 ### VPN
 
 [Back to The Top](#table-of-contents)
+
+ * **VPN (Virtual Private Network)** is a service that encrypts your internet traffic on unsecured networks to protect your online identity, hide your IP address, and shield your online data from third parties. 
 
 [Wireguard](https://www.wireguard.com/) - New minimal VPN Solution that is very fast.
 
@@ -1370,6 +1416,8 @@ Minio's test-server called "play" is already configured in the default client, y
 [Designate](https://wiki.openstack.org/wiki/Designate) - DNS REST API that support several DNS servers as its backend.
 
 [Knot](https://www.knot-dns.cz/) - High performance authoritative-only DNS server.
+
+[Lexicon](https://github.com/AnalogJ/lexicon) is a tool that provides a way to manipulate DNS records on multiple DNS providers in a standardized way.
 
 [NSD](http://www.nlnetlabs.nl/projects/nsd/) - Authoritative only, high performance, simple name server.
 
@@ -1537,6 +1585,8 @@ Minio's test-server called "play" is already configured in the default client, y
 [NETworkManager](https://github.com/BornToBeRoot/NETworkManager) - A powerful tool for managing networks and troubleshoot network problems. It contains features like a WiFi analyzer, IP scanner, port scanner, ping monitor, traceroute, DNS lookup or a LLDP/CDP capture. 
 
 [Wireshark](https://www.wireshark.org/) - The world's foremost network protocol analyzer.
+
+[Selfspy](https://github.com/selfspy/selfspy) is a daemon for Unix/X11, MacOS (thanks to @ljos) and Windows (thanks to @Foxboron), that continuously monitors and stores what you are doing on your computer. This way, you can get all sorts of nifty statistics and reminders on what you have been up to.
 
 [Cilium](https://github.com/cilium/cilium) - A networking, observability, and security solution with an eBPF-based dataplane. It provides a simple flat Layer 3 network with the ability to span multiple clusters in either a native routing or overlay mode.
 
@@ -1730,6 +1780,8 @@ Minio's test-server called "play" is already configured in the default client, y
 
 [k8s at home search](https://nanne.dev/k8s-at-home-search/#/) is a tool that indexs Flux HelmReleases from Github repositories with the ```k8s-at-home topic``` on GitHub. 
 
+[OpenFind](https://open.getfind.app/) is an app to find text in real life. Easily search your entire photo library in split seconds. This runs 100% offline. No servers, nothing weird going on.
+
 ### Notifications
 
 [Back to the Top](#table-of-contents)
@@ -1794,7 +1846,7 @@ Minio's test-server called "play" is already configured in the default client, y
 
 [October](https://octobercms.com/) is a Self-hosted Content Management System (CMS) and web platform whose sole purpose is to make your development workflow simple again. 
 
-[Grav](https://getgrav.org/) is a Fast, Simple, and Flexible, file-based Web-platform. There is Zero installation required. Just extract the ZIP archive, and you are already up and running. It omes with a powerful Package Management System to allow for simple installation and upgrading of plugins and themes, as well as simple updating of Grav itself.
+[Grav](https://getgrav.org/) is a Fast, Simple, and Flexible, file-based Web-platform. There is Zero installation required. Just extract the ZIP archive, and you are already up and running. It comes with a powerful Package Management System to allow for simple installation and upgrading of plugins and themes, as well as simple updating of Grav itself.
 
 [Orchard](https://github.com/OrchardCMS/Orchard) is a free, open source, community-focused Content Management System built on the ASP.NET MVC platform.
 
@@ -1861,6 +1913,218 @@ Minio's test-server called "play" is already configured in the default client, y
 
 [RedReader](https://github.com/QuantumBadger/RedReader) is an unofficial open source Reddit client for Android. 
 
+
+### Nostr
+
+[Back to the Top](#table-of-contents)
+
+**[Nostr (Notes and Other Stuff Transmitted by Relays)](https://nostr.com/)** is a protocol, designed for simplicity, that aims to create a censorship-resistant global social network. The protocol is based on very simple & flexible event objects (which are passed around as plain JSON) and uses standard elliptic-curve cryptography for keys and signing. 
+
+- [nostr](https://github.com/nostr-protocol/nostr) - overview and FAQ.
+- [NIPs](https://github.com/nostr-protocol/nips) - the "**N**ostr **I**mplementation **P**ossibilities" describe the protocol in technical detail.
+- [nostr, a basic tour](https://github.com/rajarshimaitra/rust-nostr/blob/main/VISION.md) - an intro to nostr.
+- [UseNostr](https://usenostr.org) - A small guide for anyone who wants to learn more about how nostr works and what it can do.
+- [nostr.how](https://nostr.how) - Quick-start to onboard desktop users with Alby & Astral.
+- [nostr.guide](https://nostr.guide) - A guide to all things nostr.
+- [nostr address book](https://github.com/aitechguy/nostr-address-book) - A directory of twitter users accounts and their NOSTR addresses.
+- [NNostr](https://github.com/Kukks/NNostr) - a C# relay.
+- [nostr-rs-relay](https://sr.ht/~gheartsfield/nostr-rs-relay/) - a minimalistic relay written in Rust that saves data on SQLite.
+- [Relayer Basic](https://github.com/fiatjaf/relayer/tree/master/basic) - a simple relay based on _relayer_ backed by Postgres.
+- [nodestr](https://github.com/Dolu89/nodestr-relay) - a Node.js implementation.
+- [sovereign-stack](https://www.sovereign-stack.org) - a tool that helps you deploy nostr relays and create self-hosted (bitcoin-only) Value4Value websites.
+- [expensive relay](https://github.com/fiatjaf/expensive-relay) - a relay that requires payment for registration
+- [me.untethr.nostr-relay](https://github.com/atdixon/me.untethr.nostr-relay) - a relay written in Clojure
+- [Minds Nostr Relay](https://gitlab.com/minds/infrastructure/nostr-relay) - a relay for [Minds](https://www.minds.com), an open-source social network
+  - [Minds Engine - Nostr](https://gitlab.com/minds/engine/-/tree/master/Core/Nostr) - relevant Minds API code for reading/writing Minds posts using Nostr
+- [NostrPostr Relay](https://github.com/Giszmo/NostrPostr/tree/master/NostrRelay) - a Kotlin Relay supporting both SQLite and Postgresql
+- [nostrpy](https://github.com/monty888/nostrpy) - relay, client, and other tooling in python
+- [nostream](https://github.com/Cameri/nostream) - a nostr relay written in Typescript backed by PostgreSQL (renamed from nostr-ts-relay)
+- [nostr_relay](https://code.pobblelabs.org/fossil/nostr_relay/) – a nostr relay written in python, backed by SQLite
+- [søstr](https://github.com/metasikander/s0str) – a private nostr relay written in rust, saves all notes from one pubkey and publish them to anyone that requests them
+- [knostr](https://github.com/lpicanco/knostr) – a nostr relay implemented in Kotlin with support for Postgres and metrics(micrometer).
+- [PyRelay](https://github.com/johnny423/pyrelay) – a python implementation of a nostr relay, using asyncio.
+- [strfry](https://github.com/hoytech/strfry) – C++ implementation backed by LMDB with efficient syncing of events using merkle trees
+- [Astro](https://github.com/Nostrology/astro) – Elixir based implementation built to be performant and highly distributed.
+- [Nex](https://github.com/lebrunel/nex) - A powerful and scalable Nostr relay written in Elixir with Postgres DB.
+- [gnost-relay](https://github.com/barkyq/gnost-relay) - nostr relay written in go backed by postgresql database.
+- [nostring](https://github.com/xbol0/nostring) - A Nostr relay written in Deno.
+- [Denostr](https://github.com/guakamoli/denostr) - Deno based, cloud native nostr implemention support by ByteTrade and Revo.
+- [nostr-relay-nestjs](https://github.com/CodyTseng/nostr-relay-nestjs)- A Nostr relay implemented using the NestJS framework
+- [Ephemerelay](https://gitlab.com/soapbox-pub/ephemerelay) - An in-memory Nostr relay that doesn't store data.
+- [Servus](https://github.com/ibz/servus) - A self-contained, single executable, CMS / blogging engine reminiscent of Jekyll which also acts as a personal Nostr relay for your blog posts. Written in Rust.
+- [nostr relay registry](https://nostr-registry.netlify.app/) - real-time checking of status of some known relays.
+- [nostr.info](https://nostr.info/) - real-time checking of status of some known relays.
+- [nostr.watch](https://nostr.watch) - real-time checking of status of some known relays.
+- [Astral](https://github.com/monlovesmango/astral) - a branle fork with global feed and UI makeover
+- [damus](https://github.com/damus-io/damus) - a twitter-like nostr client for iOS and MacOS.
+- [more-speech](https://github.com/unclebob/more-speech) - desktop client for nostr written in Clojure.
+- [futr](https://github.com/prolic/futr) - nostr client desktop app written in Haskell.
+- [Minds](https://www.minds.com/) - open source social network. Supports reading and creating posts using the Nostr protocol.
+- [Jester](https://github.com/jesterui/jesterui)  - Chess over nostr.
+  - [Jester instance](https://jesterui.github.io/)
+- [Sendstr](https://sendstr.com/) - shared clipboard between devices over nostr.
+- [nosbin](https://nosbin.com/) - pastebin over nostr.
+- [noscl](https://github.com/fiatjaf/noscl) - a basic command-line client written in Go.
+- [loquaz](https://github.com/emeceve/loquaz) - a desktop app written in Rust for direct encrypted chat.
+- [nostr console](https://github.com/vishalxl/nostr_console) - a nostr command line client written in Dart. Binaries available for Windows, Linux, and MacOS.
+- [ArcadeCity](https://github.com/ArcadeCity/app) - Public group chats and P2P services (WIP) over nostr.
+- [second exchange](https://github.com/cynsar-foundation/second.exchange) - an experiment to work out something of like medium, something of creator economy where users are rewarded for engaging in quality discussion and most importantly engaging in governance-related discussion.
+- [scalastr](https://github.com/benthecarman/scalastr) - A barebones nostr client written in scala.
+- [Nostros](https://github.com/KoalaSat/nostros) - A nostr mobile client for Android.
+- [Nostrify.me](https://github.com/lightningorb/nostrify.me) - Nostr client built in SvelteKit.
+- [NostrEmitter](https://github.com/cmdruid/nostr-emitter) - Simple E2E encrypted client and EventEmitter object
+- [Lightning.Pub](https://github.com/shocknet/Lightning.Pub) - A nostr daemon for Lightning nodes.
+- [shockwallet](https://github.com/shocknet/wallet2) - A Lightning wallet that uses nostr and lnurl to connect to nodes.
+- [coracle](https://github.com/staab/coracle) - A nostr web client.
+- [nostrweb](https://git.qcode.ch/nostr/nostrweb) - another nostr web client in vanilla JS.
+  - [nostr.ch](https://nostr.ch/) - live instance
+- [Bija](https://github.com/BrightonBTC/bija) - A desktop client written in python. Currently Linux only.
+- [Nosky](https://github.com/KotlinGeekDev/Nosky) - A native Android client for Nostr. Still in development.
+- [Stackerstan](https://stackerstan.org) - A decentralised organisation built on Bitcoin and Nostr, implemented as a replicated state machine in Golang.
+- [nostr-java](https://github.com/tcheeric/nostr-java) - A nostr client API written in java, for generating, signing and publishing events to relays.
+- [bolt.fun](https://makers.bolt.fun/feed) - A bitcoin lightning makers community that supports reading and creating comments using Nostr.
+- [iris](https://github.com/irislib/iris-messenger) - A nostr web client.
+  - [iris.to](https://iris.to) - live instance
+  - [Android app](https://play.google.com/store/apps/details?id=to.iris.twa)
+- [gossip](https://github.com/mikedilger/gossip) - A desktop client in rust presented with egui.
+- [Attached](https://github.com/dyegolara/nostr-attached) - Open-Source ReactNative Expo app for Nostr (iOS, Android). Currently under app stores review.
+- [Member](https://github.com/memberapp/memberapp.github.io) - Progressive Web App Client. Works on desktop and mobile.
+  - [member.cash](https://member.cash/) - live instance
+- [dispute](https://github.com/ethicnology/dispute) - A cross-platform (Linux, Android, iOS, MacOs, Windows and Web) client for NOSTR
+- [Snort](https://github.com/v0l/snort) - Nostr UI written in react
+- [Hamstr](https://github.com/styppo/hamstr) - A twitter-style web client built with Vue.js
+- [Nozzle](https://github.com/kaiwolfram/Nozzle) - A Twitter-like native Android client written with Jetpack Compose
+- [electron-nostr](https://github.com/wds4/electron-react-boilerplate-nostr) - A bare-bones desktop nostr client using electron-react-boilerplate. Goal is to be an easy template for people to experiment with different ideas on decentralized ratings, reputation, and web of trust.
+- [Nostrid](https://github.com/lapulpeta/Nostrid) - Multi-platform client currently offering binaries for Android, Windows, MacOS and Linux.
+  - [Nostrid.Web](https://web.nostrid.app/) - Web version running completely on the browser. It can be installed locally as PWA.
+- [nostr-chat-widget-react](https://www.npmjs.com/package/nostr-chat-widget-react?activeTab=readme) - A React component that provides a live-chat widget over nostr that can be embedded into any website.
+- [Blockcore Notes](https://github.com/block-core/blockcore-notes)  - Progressive Web App that can be installed on mobile and desktop, organize following in circles and have both public and private following lists. Dynamic interface for different uses, such as optimized for photograph viewing.
+- [Noteon](https://github.com/ShawnCN/cinny_nostsr2/tree/dev)- Yet another nostr client focused on private chat and group chat with a simple, elegant and secure interface.
+- [emon](https://github.com/sebastiaanwouters/emon) - Encrypted DMs over nostr with lightning payments integrated (WIP).
+- [notebin.org](https://notebin.org) - Nostr UI created with NextJS, support for markdown and code highlighting.
+- [Daisy](https://github.com/neb-b/daisy) - Mobile client for Android and iOS.
+- [Flycat](https://github.com/digi-monkey/flycat-web) - A 2000s old-school style web client which support blogging on Nostr.
+- [Amethyst](https://github.com/vitorpamplona/amethyst) - An Android client for nostr written in Kotlin.
+- [MeShell](https://github.com/BEEBSDONE/MeShell_Nodejs) - Web, iOS and Android blog type client destined to publish articles and researches for independent journalists.
+- [Disgus](https://github.com/carlitoplatanito/disgus) - A comment widget like Disqus, but for Nostr.
+- [Tamga](https://github.com/erdaltoprak/tamga) - An offline first nostr contact & profile manager for iOS!
+- [nostromat](https://github.com/ekimber/nostromat)- A Twitter-style Nostr web client, written in Clojurescript/React.
+- [nostrom.at](https://nostrom.at) - live instance.
+- [blogstack.io](https://blogstack.io) - Blogging site for nostr, supports markdown.
+- [Votestr](https://votestr.com/) - Poll web app with nostr authentication and blind signature unlinkability.
+- [gnost-deflate-client](https://github.com/barkyq/gnost-deflate-client)- A CLI nostr client written in go implementing permessage-deflate websocket compression.
+- [algia](https://github.com/mattn/algia) - A cli application for nostr.
+- [algia-web](https://github.com/ryogrid/algia-web) - A small resource consumption oriented Nostr web client.
+- [Blowater](https://blowater.deno.dev) - A desktop Web client focusing on chat with delightful UX.
+- [Written](https://github.com/silencesoft/written) Self hosted blog using nostr long-form content (NIP-23) and it shows only posts by selected authors.
+- [Nostr Nests](https://nostrnests.com/) - Nostr Nests is an audio space for chatting, brainstorming, debating, jamming, micro-conferences and more.
+- [nblog](https://github.com/jacany/nblog) - a self-host nostr ghost blog
+- [Nostribe.com](https://github.com/sepehr-safari/nostribe-web-client) - Nostr client web app built with Next.js 13 and TypeScript.
+  - [Nostribe.com](https://nostribe.com/) - Live instance.
+- [Nostrtium](https://github.com/pjv/nostrtium) - Post to Nostr directly from within WordPress
+- [uBlog](https://github.com/nodetec/ublog) - A minimalist blog on nostr that allows anyone to easily create their own personal micro-blog.
+- [Listr](https://github.com/sepehr-safari/listr) - A Nostr Web Client for Making Lists, built with Next.js 13 and TypeScript.  
+- [nostr-ruby](https://github.com/dtonon/nostr-ruby) - a Ruby implementation of the nostr protocol.
+- [nostr](https://github.com/wilsonsilva/nostr) - a Ruby Nostr gem for use by clients.
+- [NNostr.Client](https://github.com/Kukks/NNostr) - a C# Nostr library for use by clients.
+- [nostr-tools](https://github.com/fiatjaf/nostr-tools) - a JavaScript client that abstracts the relay management code for use by clients.
+- [nostr-relaypool-ts](https://github.com/adamritter/nostr-relaypool-ts) - a TypeScript relay pool library on top of nostr-tools that simplifies handling subscriptions to multiple servers.
+- [nostr-react](https://github.com/t4t5/nostr-react) - React Hooks for Nostr.
+- [go-nostr](https://github.com/fiatjaf/go-nostr) - a Go library that implements relay management, plus event encoding and signing utils.
+- [nostr_rust](https://github.com/0xtlt/nostr_rust) - Functional Rust implementation of the nostr protocol.
+- [nostr-js](https://github.com/jb55/nostr-js) - a javascript implementation of the nostr protocol.
+- [nostr-rs](https://github.com/futurepaul/nostr-rs) - a Rust implementation of the nostr protocol
+- [nostr](https://github.com/rust-nostr/nostr)
+  - [nostr](https://github.com/rust-nostr/nostr/tree/master/crates/nostr): Rust implementation of Nostr protocol.
+  - [nostr-sdk](https://github.com/rust-nostr/nostr/tree/master/crates/nostr-sdk): High level client library.
+  - [bindings](https://github.com/rust-nostr/nostr/tree/master/bindings): UniFFI (Kotlin, Swift, Python, Ruby) bindings.
+- [relayer](https://github.com/fiatjaf/relayer) - a server framework for writing custom relays.
+- [NostrPostr](https://github.com/Giszmo/NostrPostr) - a Kotlin Nostr library for clients or relays.
+- [python-nostr](https://github.com/jeffthibault/python-nostr) - a python library for making clients.
+- [nostr-bot](https://github.com/slaninas/nostr-bot) - a Rust library for writing bots.
+- [NostrKit](https://github.com/cnixbtc/NostrKit) - a Swift library for interacting with relays.
+- [nostr-relay-inspector](https://github.com/dskvr/nostr-relay-inspector) - A library that returns useful information about relays based on nostr-js.
+- [schorr_snap](https://github.com/neeboo/schnorr_snap) - A snap plugin for Metamask Flask, supports nostr.
+- [nostr-deno](https://github.com/KiPSOFT/nostr-deno) - a client library for Deno javascript runtime.
+- [nostr-types](https://github.com/mikedilger/nostr-types) - a rust library defining types useful for the nostr protocol.
+- [dart-nostr](https://github.com/ethicnology/dart-nostr) - a Dart library for Flutter.
+- [nostr-connect](https://github.com/nostr-connect/connect) - Nostr Connect SDK for TypeScript is a library that allows you to easily integrate Nostr Connect into your web application.
+- [pynostr](https://github.com/holgern/pynostr) - a python library for nostr.
+- [nostr-php](https://github.com/swentel/nostr-php) - a PHP library for nostr.
+- [smtp nostr gateway ](https://github.com/Cameri/smtp-nostr-gateway) - a bridge that forwards emails to pubkeys as encrypted direct messages.
+- [matrix-nostr-bridge](https://github.com/8go/matrix-nostr-bridge) - a simple Matrix-to-Nostr or Nostr-to-Matrix bridge.
+- [Mostr](https://gitlab.com/soapbox-pub/mostr) - a bridge between Nostr and the Fediverse (Mastodon, ActivityPub, etc.).
+- [nostrich.fun](https://nostrich.fun) - A feature-rich directory of nostr projects. A fork of [LightningNetworkStores.com](https://lightningnetworkstores.com)
+- [git-nostr-tools](http://git.jb55.com/git-nostr-tools) - A cli tool for sending code patches over nostr.
+- [nostr-cln-events](http://git.jb55.com/nostr-cln-events) - A CLN plugin to push clightning node events to nostr.
+- [nostr registry](https://codeberg.org/rsbondi/nostr-registry) - a database of known relays with their uptime and NIP support tables
+- [nostr-fzf](https://github.com/Cameri/nostr-fzf) - Nostr Directory; a tool for searching usernames and channels.
+- [nostr-notify](https://github.com/jb55/nostr-notify) - desktop nostr notifications using libnotify.
+- [nostr-launch](https://codeberg.org/rsbondi/nostr-launch) - A tool for launching a bunch of relays and clients locally for development and testing.
+- [nostr GitHub Action](https://github.com/theborakompanioni/nostr-action) - send events from GitHub Actions.
+- [nostrefresh](https://github.com/melvincarvalho/nostrefresh) -  A simple refresh function for nostr web pages.
+- [anonroom](https://github.com/vinliao/anonroom) - anonymous chat room inside nostr.
+- [nostril](https://github.com/jb55/nostril) - A C cli tool for creating nostr events.
+- [nostr-rs-relay-compose](https://github.com/vdo/nostr-rs-relay-compose) - A Docker compose deployment for nostr-rs-relay with SSL support based on Traefik.
+- [nostr.guru](https://nostr.guru/) - a nostr web gateway for viewing events by their ID.
+- [nostrandom.netlify.app](https://nostrandom.netlify.app/) - generate publish-able Nostr event with random keys.
+- [nashboard](https://github.com/vinliao/nashboard) - A Nostr network dashboard with network statistics, reachable [here](https://nashboard.space/).
+- [ndxstr](https://github.com/ArcadeCity/ndxstr) - nostr's layer 2 indexing nodes, with more advanced querying capability than currently supported by relays.
+- [nostrillery](https://github.com/Cameri/nostrillery) - A tool for running performance tests against Nostr relays.
+- [nostr-terminal](https://github.com/cmdruid/nostr-terminal) - A SSH-like access to your machine via web terminal, powered by Nostr.
+- [nostreq](https://github.com/blakejakopovic/nostreq) - A Nostr relay event request generator.
+- [nostr.io](https://nostr.io/) - A network statistics with last published notes, top 50 publishers, and top 50 followed users.
+- [nostr-commander](https://github.com/8go/nostr-commander-rs) - A simple but convenient CLI-based Nostr app for following users, sending DMs, etc.
+- [nostr.directory](https://github.com/pseudozach/nostr.directory) - A searchable database of nostr users and their other social media links.
+- [nostr-tool](https://github.com/0xtrr/nostr-tool) - A Rust CLI tool to generate and publish events.
+- [frostr](https://github.com/nickfarrow/frostr) - Create joint nostr identities and require t-of-n signatures to post.
+- [nostr.rest](https://nostr.rest) - Mine proof of work public keys with user specified prefixes.
+- [lnpass](https://lnpass.github.io) - A key manager for Lightning and nostr.
+- [sb.nostr.band](https://sb.nostr.band) - Search bots that you can create and follow to receive new posts matching a keyword right into your feed.
+- [rss.nostr.band](https://rss.nostr.band) - Create custom RSS feeds with posts matching your keywords and consume using your favorite RSS reader.
+- [nostrview](https://nostrview.com) - A nostr search engine. Search by content, tags, events or pub keys.
+- [nostr-bulk-dms](https://github.com/leesalminen/nostr-bulk-dm) - A tool that allows you to send DMs over nostr to many recipients in bulk.
+- [nostrify](https://github.com/joelklabo/nostrify) - A Core Lightning plugin that sends events (forwards, connect, disconnect, etc.) to nostr.
+- [nip06-web](https://github.com/jaonoctus/nip06-web) - a website to generate or restore NIP-06 seed phrases
+- [nip06-cli](https://github.com/jaonoctus/nip06-cli) - a Node.js CLI to generate or restore NIP-06 seed phrases.
+- [nostr-broadcast](https://github.com/leesalminen/nostr-broadcast) - A tool lets you take your events from some relays and broadcast them to another relay. Could be helpful for backing up your notes to a private relay.
+- [nostr-follow-bundler](https://github.com/leesalminen/nostr-follow-bundler) - A tool lets you create lists of profiles that other users can then see and follow themselves.
+- [nostr-proxy](https://github.com/dolu89/nostr-proxy) - Push and get events to your Proxy, get results from multiple Nostr relays.
+- [nostrends](https://github.com/akiomik/nostrends) - Trending on Nostr, like Twitter trends. Live at [nostrends.vercel.app](https://nostrends.vercel.app).
+- [homebrew-nostr](https://github.com/0xbabo/homebrew-nostr) - Homebrew tap for Nostr software.
+- [heyxynip5](https://github.com/bennyhodl/hexynip5) - A CLI helper for converting nostr npub/nsec to their hex format for NIP-05 verification.
+- [http-nostr-publisher](https://github.com/getAlby/http-nostr-publisher) - A Cloudflare worker to publish Nostr events to relays through a non-blocking HTTP interface .
+- [blastr](https://github.com/MutinyWallet/blastr) - A nostr cloudflare workers proxy relay that publishes to all known relays.
+- [keystr-rs](https://github.com/keystr/keystr-rs) - An application for managing Nostr keys. Written in Rust, with simple UI (Iced).
+- [nostr_simple_publish](https://www.drupal.org/project/nostr_simple_publish/) - Drupal module to publish content to Nostr.
+- [nostr-spam-detection](https://github.com/blakejakopovic/nostr-spam-detection) - An experiment in building a machine learning model to label Nostr spam content for filtering and relay rejection.
+- [blogsync](https://github.com/canostrical/blogsync) - Self-host blog articles from long-form notes e.g. via Caddy server.
+- [NostrFlu](https://heguro.github.io/nostr-following-list-util/) - A tool to collect and resend following lists from relays. You can also check badges.
+- [nkcli](https://github.com/mdzz-club/nkcli) - A CLI tool for nostr key manage and serve NIP-46.
+- [git-nostr](https://github.com/colealbon/git-nostr)- A tool to enhance git cli with nostr communications.
+- [nostr-wtf](https://github.com/LightningK0ala/nostr-wtf) - A set of nostr tools available and deployed on a web app including a [pubkey converter](https://lightningk0ala.github.io/nostr-wtf/) and [relay query tool](https://lightningk0ala.github.io/nostr-wtf/query).
+- [strfry policies](https://gitlab.com/soapbox-pub/strfry-policies)- A collection of moderation & antispam policies for the strfry relay developed in TypeScript/Deno.
+- [nostrum](https://github.com/nostr-connect/nostrum) - Nostrum it's a mobile app that allows you to sign transactions and messages with your Nostr keys. Nostrum is the reference implementation for a remote signer app (ie. Wallet) of the Nostr Connect protocol.
+- [nostr-signing-device](https://github.com/lnbits/nostr-signing-device) - Signing device for Nostr built on ESP32.
+
+### iMessage
+
+[Back to the Top](#table-of-contents)
+
+ * [Beeper HitHub](https://github.com/beeper)
+ * [iMessage - Getting Started Guide - Beeper](https://help.beeper.com/chat-networks/imessage)
+ 
+[iMessage-exporter](https://github.com/ReagentX/imessage-exporter) is a binary exports iMessage data to txt or html formats. It can also run diagnostics to find problems with the iMessage database.
+
+[pypush](https://github.com/JJTech0130/pypush) is a POC demo of my recent iMessage reverse-engineering. It can currently register as a new device on an Apple ID, set up encryption keys, and send and receive iMessages!
+
+[Self-Host Beeper](https://github.com/beeper/self-host) is a self-hosted universal chat app that can chat with your friends on iMessage from your Android device using your phone number. You can also join iMessage Group Chats with your phone number and blue bubbles, and share full-resolution images, videos, and audio. 
+
+[Beeper Mini](https://help.beeper.com/beeper-mini/beeper-mini-getting-started-guide-site) is an Andorid app that can chat with your friends on iMessage from your Android device using your phone number. You can also join iMessage Group Chats with your phone number and blue bubbles, and share full-resolution images, videos, and audio.
+
+[Beeper Bridge Manager](https://github.com/beeper/bridge-manager) is a tool for running self-hosted bridges with the Beeper Matrix server. 
+
+[Matrix Ansible and Docker Deploy](https://github.com/spantaleev/matrix-docker-ansible-deploy) is a Matrix (An open network for secure, decentralized communication) server setup using Ansible and Docker.
 
 ### Communications
 
@@ -1987,6 +2251,8 @@ Minio's test-server called "play" is already configured in the default client, y
 
 [Pretty Good Privacy (PGP)](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) is an encryption program that provides cryptographic privacy and authentication for data communication. It's used for signing, encrypting, and decrypting texts, e-mails, files, directories, and whole disk partitions and to increase the security of e-mail communications. 
 
+[Deadbolt](https://github.com/alichtman/deadbolt) is a Dead-simple file encryption for any OS.
+
 [Infisical](https://infisical.com/) is an open-source, end-to-end encrypted platform to sync secrets and configs across your team and infrastructure. 
 
 [Hemmelig.app](https://github.com/HemmeligOrg/Hemmelig.app) is a tool that keeps your sensitive information out of chat logs, emails, and more with encrypted secrets. 
@@ -2067,6 +2333,8 @@ Minio's test-server called "play" is already configured in the default client, y
 [ZFSBootMenu](https://zfsbootmenu.org/) is a Linux bootloader that attempts to provide an experience similar to FreeBSD's. This allows a user to have multiple "boot environments" (with different distributions, for example), manipulate snapshots before booting, and, for the adventurous user, even bootstrap a system installation via ```zfs recv```.
 
 [Btrfs maintenance toolbox](https://github.com/kdave/btrfsmaintenance) is a set of scripts supplementing the btrfs filesystem and aims to automate a few maintenance tasks. This means the scrub, balance, snapshots, trim or defragmentation.
+
+[Btrbk](https://github.com/digint/btrbk) is a backup tool for btrfs subvolumes, taking advantage of btrfs specific capabilities to create atomic snapshots and transfer them incrementally to your backup locations.
 
 [ksync](https://github.com/ksync/ksync) is a toool that sync files between your local system and a kubernetes cluster. It transparently updates containers running on the cluster from your local checkout. 
 
@@ -2206,6 +2474,12 @@ Minio's test-server called "play" is already configured in the default client, y
 
 [OpenMediaVault](https://www.openmediavault.org/) is a next generation network attached storage (NAS) solution based on Debian Linux. It contains services like SSH, (S)FTP, SMB/CIFS, AFS, UPnP media server, DAAP media server, RSync, BitTorrent client and many more.
 
+[MediaElch](https://github.com/Komet/MediaElch) is a MediaManager for Kodi. Information about Movies, TV Shows, Concerts and Music are stored as NFO files.
+
+[tinyMediaManager](https://www.tinymediamanager.org/) is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server. 
+
+[FileBot](https://www.filebot.net/) is the ultimate tool for renaming and organizing your movies, TV shows and Anime. Match and rename media files against online databases, download artwork and cover images, fetch subtitles, write metadata, and more, all at once in matter of seconds.
+
 [Plex media server](https://www.plex.tv/) is a application that gives you the power to add, access and share all the entertainment that matters to you, on almost any device. With 50,000+ on demand titles and hundreds of channels of live TV, plus your own personal media collection, using one powerful app.
 
 [Tautulli](https://tautulli.com/) is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics.
@@ -2276,7 +2550,7 @@ Most **smart devices** have their own [Virtual Local Area Network (VLAN)](https:
  
 **------------------------------------------------------------------**
 
-[Home Assistant](https://www.home-assistant.io/) is an open source home automation that puts local control and privacy first. Home Assistant is powered by a worldwide community of tinkerers and DIY enthusiasts that runs great on Raspberry Pi. 
+[Home Assistant](https://www.home-assistant.io/) is an open source home automation that puts local control and privacy first. Home Assistant is powered by a worldwide community of tinkerers and DIY enthusiasts that runs great on Raspberry Pi. [$13 USD voice assistant remote for Home Assistant](https://www.home-assistant.io/voice_control/thirteen-usd-voice-remote/)
 
 _Add-ons are additional applications and services, that can be run alongside
 Home Assistant. The Home Assistant OS and Supervised installations types,
@@ -2465,6 +2739,24 @@ Home Assistant integrations. Credit: [Home Assistant](https://www.home-assistant
 
 [Back to the Top](#table-of-contents)
 
+[$13 voice assistant remote for Home Assistant](https://www.home-assistant.io/voice_control/thirteen-usd-voice-remote/)
+
+[Wyoming](https://github.com/rhasspy/wyoming) is a peer-to-peer protocol for voice assistants (basically [JSONL](https://jsonlines.org/) + PCM audio). It's used in [Rhasspy](https://github.com/rhasspy/rhasspy3/) and the [Home Assistant](https://www.home-assistant.io/integrations/wyoming) for communication with voice services.
+
+[Wyoming Faster Whisper](https://github.com/rhasspy/wyoming-faster-whisper) is a Wyoming protocol server for the faster-whisper speech to text system.
+
+[Wyoming Porcupine1](https://github.com/rhasspy/wyoming-porcupine1) is a Wyoming protocol server for the porcupine1 wake word detection system.
+
+[Wyoming Snowboy](https://github.com/rhasspy/wyoming-snowboy) is a Wyoming protocol server for the snowboy wake word detection system.
+
+[faster-whisper](https://github.com/guillaumekln/faster-whisper/) is a reimplementation of OpenAI's Whisper model using [CTranslate2](https://github.com/OpenNMT/CTranslate2/), which is a fast inference engine for Transformer models.
+
+[Porcupine](https://github.com/Picovoice/porcupine) is a highly-accurate and lightweight wake word engine. It enables building always-listening voice-enabled applications. It uses deep neural networks trained in real-world environments.
+
+[Rhasspy](https://github.com/rhasspy/rhasspy3/) is an open source voice assistant toolkit for many human languages.
+
+[openWakeWord](https://github.com/dscripka/openWakeWord) is an open-source wakeword library that can be used to create voice-enabled applications and interfaces. It includes pre-trained models for common words & phrases that work well in real-world environments.
+
 [Conversation](https://www.home-assistant.io/integrations/conversation) is an integration allows you to converse with **Home Assistant.** You can either converse by pressing the microphone in the frontend (supported browsers only (no iOS)) or by calling the ```conversation/process``` service with the transcribed text.
 
 [Piper](https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4.
@@ -2487,6 +2779,10 @@ Home Assistant integrations. Credit: [Home Assistant](https://www.home-assistant
 
 [Frigate](https://frigate.video/) is an open source NVR built around real-time AI object detection. All processing is performed locally on your own hardware, and your camera feeds never leave your home.
 
+[hkcam](https://hochgatterer.me/hkcam/) is an open-source implementation of an HomeKit IP camera. It uses ffmpeg to access the camera stream and publishes the stream to HomeKit using hap. The camera stream can be viewed in a HomeKit app. 
+
+[OpenDataCam](https://opendata.cam/) is an open source tool to quantify the world. It quantifies and tracks moving objects with live video analysis. It is designed to be an accessible, affordable and open-source solution to better understand interactions in urban environments. It never records any photo or video data. The system only saves surveyed meta-data, in particular the path an object moved or number of counted objects at a certain point.
+
 [Viseron](https://github.com/roflcoopter/viseron) is a Self-hosted, local only NVR and AI Computer Vision software. 
 
 [zmninja](http://zmninja.zoneminder.com/) is a high performance, cross platform ionic app for Home/Commerical Security Surveillance using ZoneMinder.
@@ -2495,6 +2791,14 @@ Home Assistant integrations. Credit: [Home Assistant](https://www.home-assistant
 
 [Shinobi Pro](https://gitlab.com/Shinobi-Systems/Shinobi) is a Next Generation in Open-Source Video Management Software with support for over 6000 IP and USB Cameras.
 
+[WyzeHacks](https://github.com/HclX/WyzeHacks) is a project contains a set of scripts trying to provide additional features not implemented by the official firmware. Currently, it provides the following functions:
+
+  * Enable telnetd on your camera.
+  * Customize the default root password for telnet login.
+  * Redirect all the recordings to an NFS share.
+  * Redirect console logs into an NFS share.
+  * Automatically reboot the camera at certain time.
+  * Automatically archive the recordings.
 
 ### Text-To-Speech Synthesis (TTS)
 
@@ -2562,6 +2866,8 @@ Home Assistant integrations. Credit: [Home Assistant](https://www.home-assistant
 [Castopod](https://code.castopod.org/adaures/castopod) is an open-source hosting platform made for podcasters who want engage and interact with their audience.
 
 [Sovereign Feeds](https://sovereignfeeds.com/) is a tool to Search for your podcasts and add them to your favorites.
+
+[IPFS Podcasting](https://ipfspodcasting.net/) is a Decentralized Podcast Distribution over IPFS where you can crowd hosting podcast episodes with storage & bandwidth provided by volunteer nodes. 
 
 [Audiobookshelf](https://www.audiobookshelf.org/) is a self-hosted audiobook and podcast server.
 
@@ -2658,6 +2964,8 @@ Home Assistant integrations. Credit: [Home Assistant](https://www.home-assistant
 
 [MapTiler Server](https://www.maptiler.com/server/self-host-satellite-maps/) is a self-hosted Aerial and satellite imagery maps of the entire world from your own server or laptop.
 
+[GPSLogger](https://gpslogger.app/) is a GPS tool that uses the GPS capabilities of your Android phone to log coordinates to GPS format files at regular intervals. This can be particularly useful if you want to geotag your photos after a day out or share your travel route with someone. 
+
 [KelperJs](http://keplerjs.io/) is a open source full-stack geosocial network platform.
 
 [OpenStreetMap(OSM)](https://www.openstreetmap.org/) is a map of the world, created by people like you and free to use under an open license. Hosting is supported by UCL, Fastly, Bytemark Hosting, and other partners.
@@ -2740,6 +3048,8 @@ Home Assistant integrations. Credit: [Home Assistant](https://www.home-assistant
 
 [Librephotos Docker](https://github.com/LibrePhotos/librephotos-docker) is the Dockerfiles for the automated build process of LibrePhotos.
 
+[OneFolder](https://github.com/OneFolderApp/OneFolder) is a Desktop app to sort your images the same way you would in Google Photos, but locally, no need to run a server (and compatible with NAS).
+
 ### Pastebins
 
 [Back to the Top](#table-of-contents)
@@ -2808,6 +3118,8 @@ Home Assistant integrations. Credit: [Home Assistant](https://www.home-assistant
 [Lapce](http://lapce.dev/) is a Lightning-fast And Powerful Code Editor written in pure Rust with a UI in Druid (which is also written in Rust). 
 
 [nb](https://xwmx.github.io/nb) is a CLI and local web plain text note‑taking, bookmarking, and archiving with linking, tagging, filtering, search, Git versioning & syncing, Pandoc conversion, + more, in a single portable script. 
+
+[Outline](https://www.getoutline.com/) is the fastest knowledge base for growing teams. It provides a beautiful, realtime collaborative, feature packed, and markdown compatible. 
 
 [Rustpad](https://rustpad.io/#yAbbW9) is an open-source collaborative text editor based on the operational transformation algorithm. Share a link to this pad with others, and they can edit from their browser while seeing your changes in real time.
 
@@ -3084,6 +3396,7 @@ Also, I recommend using **[Intel® QuickAssist Technology (Intel® QAT)](https:/
  * [Asustor DriveStor 4 NAS](https://www.asustor.com/product?p_id=71)
  * [TRENDnet TEG-S350 (2.5 GbE) Switch](https://www.amazon.com/TRENDnet-2-5GBASE-T-Compatible-10-100-1000Mbps-TEG-S350/dp/B08XWK4HNT)
  * [Storinator™](https://www.45drives.com/products/storage/) is a line of Ultra-Large, Direct-Wired storage Servers by [45Drives](https://www.45drives.com/).
+ * [HL15 from 45HomeLab](https://store.45homelab.com/configure/hl15) is an open-source, open-platform, 15-bay homelab server. The HL15 features enterprise architecture and strength brought to a scale that works for the homelab. The server's direct-wired architecture can provide blazing fast transfer speed of up to 2GB per second. 
  * [LattePanda Sigma](https://www.lattepanda.com/lattepanda-sigma) is a powerful and compact x86 Windows single board computer (SBC). It features the 13th Intel® Core™ i5-1340P Rapter Lake (12-Core, 16-Thread) processor and 16GB Dual-Channel LPDDR5-6400MHz memory.
  * [Apex Storage X21](https://www.apexstoragedesign.com/apexstoragex21) is a storage solution that gives you have the freedom to choose system hardware thatworks best for you with the following benefits.
     * Host 21 x M.2 Gen 4 NVME SSD’s
@@ -3093,8 +3406,10 @@ Also, I recommend using **[Intel® QuickAssist Technology (Intel® QAT)](https:/
     * 100 PCIe 4.0 Lanes
     * Full UEFI/Secure Boot Support
  * [GL.iNet](https://www.gl-inet.com/) is a leading developer of OpenWrt Wi-Fi and IoT Network Solutions. They build Wi-Fi routers, IoT gateways and remote device management platforms for a wide range of scenarios. All their routers include powerful built-in firewall, Shadow also supports OpenVPN, WireGuard® and customized DNS server in order to level up your online security.
- * [Protectli Vault](https://protectli.com/) is a series of small computers that have firewalls with advanced firmware protection to keep your network safe. All Vaults are Opertaing System (OS) agnostic and support a variety of popular open source software distributions. Run a firewall like OPNsense, pfSense, or others. Also, run any hypervisor on your system. 
+ * [Protectli Vault](https://protectli.com/) is a series of small computers that have firewalls with advanced firmware protection to keep your network safe. All Vaults are Opertaing System (OS) agnostic and support a variety of popular open source software distributions. Run a firewall like OPNsense, pfSense, or others. Also, run any hypervisor on your system.
+ * [Espclicker](https://www.pricelesstoolkit.com/en/projects/32-espclicker.html) is a small device that you can use to integrate not IoT devices into your smart home setup, It connects directly to the push buttons of the device, which you want to control, and then simulates pressing them. You can simulate button clicks, hold time, and multiple clicks. 
  * [Pockethernet](https://pockethernet.com/) is a smartphone connected Ethernet network analyzer & cable tester that fits into your pocket. It helps any IT admin dealing with Ethernet network installation and maintenance. It lets you check the ethernet link, find cable faults, PoE voltage, VLAN, DHCP results and much more with the press of a button.
+ * [$13 USD voice assistant remote for Home Assistant](https://www.home-assistant.io/voice_control/thirteen-usd-voice-remote/)
  * [ATOM ECHO](https://docs.m5stack.com/en/atom/atomecho) is a Programmable Smart Speaker based on the M5ATOM design. Music can be played using the BT (Bluetooth Technology) capabilities of the ESP32 from a mobile phone or tablet. The device could be programmed to access AWS, Azure, and other cloud platforms, using the built-in microphone and speaker for voice interaction. 
  
 ### Operating Systems
@@ -3391,13 +3706,15 @@ Red Hat Enterprise Linux Desktop
   <br />
 </p>
 
-**GhostBSD Desktop. Source:[GhostBSD](https://www.ghostbsd.org/)**
+**GhostBSD Desktop. Source: [GhostBSD](https://www.ghostbsd.org/)**
 
 
 ### Storage
 
  [Back to the Top](https://github.com/mikeroyal/Self-Hosting-Guide#table-of-contents)
- 
+
+  -[Storage Reference Guide by Storage Review](https://www.storagereview.com/storage-reference-guide)
+  
   - [Western Digital Hard Drives Storage size range 2TB up to 20TB](https://www.westerndigital.com/c/internal-drives.0_TB-4_TB.11_TB-20_TB.5_TB-10_TB.hard_drives)
  
   - [Seagate Hard Drives Storage size range 2TB up to 18TB](https://www.seagate.com/internal-hard-drives/hdd/)
@@ -3588,6 +3905,8 @@ Red Hat Enterprise Linux Desktop
   - [Deploy Your Self-Hosted Mattermost Server](https://mattermost.com/deploy/)
   
   - [Monitor your Internet with a Raspberry Pi by Jeff Geerling](https://www.jeffgeerling.com/blog/2021/monitor-your-internet-raspberry-pi)
+
+  -[Storage Reference Guide by Storage Review](https://www.storagereview.com/storage-reference-guide)
   
   - [NextCloud Migration Guide](https://nextcloud.com/migration/)
   
